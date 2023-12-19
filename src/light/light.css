@@ -1,0 +1,100 @@
+.traffic-system {
+  max-width: 600px;
+  margin: 40px auto 0;
+}
+.traffic-light {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50px;
+  height: 150px;
+
+  border-radius: 5px;
+  background-color: #ffbf38;
+}
+
+.lights {
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+  border-radius: 50%;
+  background-color: #cd9a2d;
+}
+
+.lights.red {
+  background-color: #f00;
+}
+
+.lights.yellow {
+  background-color: #ff0;
+}
+
+.lights.green {
+  background-color: #0f0;
+}
+.street-a {
+  display: flex;
+  justify-content: center;
+}
+
+.street-a-content {
+  position: relative;
+  background: #0f0;
+}
+.street-a-top::before {
+  content: "Street A";
+  position: absolute;
+  display: block;
+  left: -80px;
+  top: 10px;
+  font-size: 20px;
+}
+.street-lane {
+  background: #2c2a2a;
+  padding: 5px 20px 40px;
+}
+.street-lane-b {
+  background: #2c2a2a;
+  display: flex;
+  justify-content: space-around;
+}
+.street-b {
+  position: relative;
+}
+
+.street-b::before {
+  content: "Street B";
+  position: absolute;
+  display: block;
+  right: 0;
+  top: -30px;
+  font-size: 20px;
+}
+.controls {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  width: 100px;
+  padding-top: 10px;
+  align-items: center;
+}
+.start,
+.reset {
+  background: #008001;
+  border: 0;
+  outline: none;
+  color: #fff;
+  width: 60px;
+  padding: 5px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.lane-a {
+  border-right: 3px solid #ffff00;
+  border-left: 3px solid #ffff00;
+}
+
+.lane-b {
+  border-top: 0px solid #ffff00;
+  border-bottom: 0px solid #ffff00;
+}
